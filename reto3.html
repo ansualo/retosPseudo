@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO3</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO3
+
+        let A = prompt("Escribe el primer numero");
+        let B = prompt("Escribe el segundo numero");
+        let C = prompt("Escribe el tercer numero");
+        let mayor = 0;
+        let menor = 0;
+
+
+        if (A > B && A > C){
+            alert(`El numero mayor es ${A}`); 
+                if (B > C) {
+                    alert(`El numero menor es ${C}`);
+                } else {
+                    alert(`El numero menor es ${B}`);
+        }}
+        else if (B > A && B > C){
+            alert(`El numero mayor es ${B}`);    
+                if (A > C) {
+                    alert(`El numero menor es ${C}`);
+                } else {
+                    alert(`El numero menor es ${A}`);
+        }}
+        else if(C > A && C > B){
+            alert(`El numero mayor es ${C}`);     
+                if (A > B) {
+                    alert(`El numero menor es ${B}`);
+                } else {
+                    alert(`El numero menor es ${A}`);
+        }}
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO28</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO28
+
+        const login = (passwordDefecto)=>{
+
+            let password = "";
+            let contador = 3;
+
+            do {
+                password = prompt("Password");
+            
+                if(passwordDefecto == password){
+                    alert("Login OK");
+                    break;
+                } else {
+                    contador--;
+                    alert(`Login erroreo, le quedan ${contador}`)
+                    if (contador == 0){
+                        alert("Número de intentos agotado")
+                    }
+                }
+            } while (contador != 0);
+            };
+
+            login("eureka");
+ 
+        
+        
+    </script>
+
+</body>
+</html>

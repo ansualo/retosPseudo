@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO20</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO20
+
+        let descuento = 0.15;
+        let mes = prompt("¿En que mes estamos?");
+        let importe = 0;
+        let total = 0;
+
+        if (mes == "octubre"){
+            importe = Number(prompt("¿Cuál es el importe de la compra?"));
+            total = importe - importe * descuento;
+            alert(`Su total con el descuento del 15% será de ${total}`)
+        } else {
+            alert("Lo sentimos, no tenemos ofertas actualmente")
+        }
+
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO14</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO14
+
+        let A = Number(prompt("Introduce el valor de A"));
+        let B = Number(prompt("Introduce el valor de B"));
+        let suma = 0;
+        let resta = 0;
+        let multiplicacion = 0;
+        let division = 0;
+
+
+        switch (prompt("¿Que operación quieres hacer?(suma, resta, multiplicacion, division)")) {
+            case "suma":
+                resultado = A + B;
+                alert(resultado);
+                break;
+            case "resta":
+                resultado = A - B;
+                alert(resultado);
+                break;
+            case "multiplicacion":
+                resultado = A * B;
+                alert(resultado);
+                break;
+            case "division":
+                resultado = A / B;
+                alert(resultado);
+                break;
+            default:
+                alert("Introduce una operacion valida")
+                break;
+        }
+        
+
+    </script>
+
+
+</body>
+</html>

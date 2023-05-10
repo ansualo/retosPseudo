@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO8</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO8
+
+
+        let sumaImp = 0;
+        let sumaPar = 0;
+        let sumaMult = 0;
+
+        let veces = prompt("¿Cuantos números quieres?");
+
+
+        for (let i = 0; i <= veces; i++){
+            if (i % 2 != 0){
+                sumaImp = sumaImp + i;
+            } else {
+                sumaPar = sumaPar + i;
+            } if (i % 3 == 0){
+                sumaMult = sumaMult + i;
+            }
+        }
+        console.log(`la sumaImp es ${sumaImp}, la sumaPar es ${sumaPar} y la sumaMulp es ${sumaMult}`)
+           
+                
+
+    </script>
+
+
+</body>
+</html>

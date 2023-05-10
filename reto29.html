@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO29</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO29
+
+        let num = null;
+        let lista = [];
+        let suma = 0;
+        let media = 0;
+        
+
+        // añadimos los numeros a la lista
+        while(num != 0){
+            num = Number(prompt("¿Escribe un número?"))
+            let add = lista.push(num);
+        }
+
+       // lo ordenamos de menor a mayor y llamamos a la menor quitando el 0
+        const ordenar = (queOrdeno)=>{
+            let listaOrdenada = queOrdeno.sort();
+            return listaOrdenada;
+        }
+
+        console.log(ordenar(lista))
+        console.log(`El minimo es ${lista[1]}`);
+
+        // cambiamos el orden para que el mayor este el primero
+        const revertir = (queRevierto)=>{
+            let listaRevertida = lista.reverse();
+            return listaRevertida;
+            
+        }
+
+        console.log(revertir(lista));
+        console.log(`El máximo es ${lista[0]}`);
+
+        // los sumamos y hacemos la media 
+
+        lista.forEach(element => {
+            suma += element
+        });
+        
+        media = suma / lista.length;
+        console.log(`La media es ${media}`);
+ 
+        
+    </script>
+
+</body>
+</html>

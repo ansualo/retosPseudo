@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO26</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO26 No esta terminado, empieza a contar desde 0
+
+        let veces = Number(prompt("¿Cuantos números quieres?"));
+        let num = 0;
+        let suma = 0;
+
+
+
+        for (let i = 0; i < veces; i++) {
+            num = veces;
+
+            while (num % 2 == 0){
+                console.log (" el numero par es " + num);
+                suma = suma + num;
+                console.log(`la suma es ${suma}`);
+                num ++;
+                if (num % 2 != 0){
+                    console.log ("El numero impar es " + num)
+                    num++;
+                }
+                break
+            }
+        }
+        console.log(`la suma es ${suma}`);
+        
+
+        
+    </script>
+
+
+</body>
+</html>

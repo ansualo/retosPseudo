@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO12</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO12
+
+        let producto = 0;
+        let resultado = 0;
+        let cantidad = prompt("¿Cuantos productos tienes?");
+        let pago = 0;
+        let devolver = 0;
+        let falta = 0;
+
+
+        for (let i = 0; i < cantidad; i++) {
+            producto = Number(prompt("Escribe el precio del producto"));
+            resultado = resultado + producto;
+        }
+
+        alert(`El precio total es ${resultado}`)
+
+        if ((pago = Number(prompt("Introduce tu dinero"))) > resultado){
+            devolver = pago - resultado;
+            alert(`Te devolvemos ${devolver} euros`);
+        } else {
+            falta = resultado - pago
+            alert(`No te llega, te falta ${falta}`);
+        }
+        
+
+    </script>
+
+
+</body>
+</html>

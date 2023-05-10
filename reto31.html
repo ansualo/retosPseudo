@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RETO31</title>
+</head>
+<body>
+
+    <script>
+
+        // RETO31
+
+        let alumno = 0;
+        let practica = 0;
+        let problemas = 0;
+        let teorica = 0;
+        let notaFinal = 0;
+
+        
+        do {
+            alumno = prompt("Escribe el nombre del alumno");
+            if (alumno == ""){
+                alert("No hay más alumnos");
+            } else{
+                practica = Number(prompt("Cual es la nota de la parte de practica"));
+                problemas = Number(prompt("Cual es la nota de la parte de problemas"));
+                teorica = Number(prompt("Cual es la nota de la parte de teorica"));
+                    if(practica >= 0 && practica <= 10 && problemas >= 0 && problemas <= 10 && teorica >= 0 && teorica <= 10 ){
+                        notaFinal = practica * 0.1 + problemas * 0.5 + teorica * 0.4;
+                        alert(`La nota final es ${notaFinal}`);
+                    } else {
+                        alert("Las notas no son correctas")
+                    }
+            }
+        } while (alumno != "")
+                    
+                
+    
+
+    </script>
+
+
+</body>
+</html>
